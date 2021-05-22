@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier Groupe 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="groupe">
+        <h1>Ajouter</h1>
+    </div>
+
+    <div class="formulaire">
+
+        <form class="form">
+
+            <div class="information">
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="firstname" placeholder="Entrez votre nom" required>
+            </div>
+            <div class="information">
+                <label for="prenom">Prenom</label>
+                <input type="text" name="prenom" id="lastname" placeholder="Entrez votre prenom" required>
+            </div>
+            <div class="information">
+                <label for="genre">Genre</label>
+                <select name="genre" id="gender" required>
+                    <option value="M">M</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+            <div class="envoyer">
+                <button type="submit">Enregistrer</button>
+            </div>
+
+        </form>
+
+        <div class="etudiant">
+            <img src="img/simplon.png" alt="" width="100px" height="100px">
+            <h3>Nom : <span id="nom"></span></h3>
+            <h3>Prenom : <span id="prenom"></span></h3>
+            <h3>Genre : <span id="genre"></span></h3>
+        </div>
+
+    </div>                 
+    
+    <div class="ajouter">
+        <a href="index.html">Voire le groupe</a>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

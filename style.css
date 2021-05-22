@@ -1,0 +1,126 @@
+body{
+    background-color: #eaf1f3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.groupe h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    color: #337180;
+}
+.container{
+    margin: 0px 100px 100px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.etudiant{
+    border: 2px solid #337180;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    width: 200px;
+}
+.delete{
+    display: none;
+}
+.etudiant:hover{
+    box-shadow: 0px 0px 20px 0px rgba(0, 64, 124, 0.8);
+}
+.etudiant span{
+    color: #023b49;
+}
+.etudiant .supprimer{
+    border: none;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+    background: #d10000;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.ajouter{
+    display: flex;
+    justify-content: center;
+}
+.ajouter a{
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #fff;
+    background: #337180;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.formulaire{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 200px 50px 200px;
+}
+.formulaire .etudiant{
+    width: 400px;
+    padding-top: 100px;
+}
+.formulaire .form{
+    border: 2px solid #337180;
+    border-radius: 10px;
+    width: 400px;
+    padding: 30px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.formulaire .form:hover{
+    box-shadow: 0px 0px 20px 0px rgba(0, 64, 124, 0.8);
+}
+.form .information{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.information label{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.information input[type=text],
+.information select{
+    margin-top: 10px;
+    padding: 15px;
+    border: 2px solid #337180;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+.information input[type=text]::placeholder,
+.information select{
+    font-size: 16px;
+    font-weight: 600;
+}
+.information input[type=text]:focus,
+.information select{
+    font-size: 16px;
+    font-weight: 600;
+}
+.formulaire .envoyer{
+    text-align: center;
+}
+.formulaire .envoyer button{
+    border: none;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #fff;
+    background: #337180;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
