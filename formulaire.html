@@ -9,8 +9,15 @@
 </head>
 <body>
 
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="formulaire.html" class="active">Ajouter</a></li>
+        </ul>
+    </div>
+
     <div class="groupe">
-        <h1>Ajouter</h1>
+        <h1>Ajouter un nouveau membre</h1>
     </div>
 
     <div class="formulaire">
@@ -39,17 +46,18 @@
         </form>
 
         <div class="etudiant">
-            <img src="img/simplon.png" alt="" width="100px" height="100px">
-            <h3>Nom : <span id="nom"></span></h3>
-            <h3>Prenom : <span id="prenom"></span></h3>
-            <h3>Genre : <span id="genre"></span></h3>
+            <div id="afficher">
+                <div class="alerte">
+                    <h4>Nouveau membre</h4>
+                </div>
+                <img src="img/simplon.png" alt="" width="100px" height="100px">
+                <h3>Nom : <span id="nom"></span></h3>
+                <h3>Prenom : <span id="prenom"></span></h3>
+                <h3>Genre : <span id="genre"></span></h3>
+            </div>
         </div>
 
     </div>                 
-    
-    <div class="ajouter">
-        <a href="index.html">Voire le groupe</a>
-    </div>
 
     <script src="app.js"></script>
 </body>

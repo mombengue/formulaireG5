@@ -37,6 +37,8 @@ const form = document.querySelector('form');
 
 const firstname = document.getElementById("firstname");
 const lastname = document.getElementById("lastname");
+const afficher = document.getElementById("afficher");
+
 const gender = document.getElementById("gender");
 
 const nom = document.getElementById("nom");
@@ -45,6 +47,8 @@ const genre = document.getElementById("genre");
 
 form.addEventListener('submit', function(e) {
     e.preventDefault(); 
+
+    afficher.style.display = 'block'; 
 
     nom.textContent = firstname.value;
     prenom.textContent = lastname.value;

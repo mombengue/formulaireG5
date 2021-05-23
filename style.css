@@ -1,6 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
     background-color: #eaf1f3;
     font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    display: flex;
+    justify-content: center;
+}
+li{
+    list-style: none;
+    margin-right: 100px;
+}
+a{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    color: #337180;
+}
+.menu{
+    background: #fff;
+    padding: 10px 0px;
+}
+.menu a{
+    position: relative;
+}
+.menu a.active::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: -5px  ;
+    background: #337180;
+
+}
+.menu a:hover{
+    color: #337180;
+}
+.groupe{
+    margin-top: 80px;
 }
 .groupe h1{
     text-align: center;
@@ -26,6 +67,10 @@ body{
 }
 .etudiant:hover{
     box-shadow: 0px 0px 20px 0px rgba(0, 64, 124, 0.8);
+}
+.etudiant h3,
+.etudiant img{
+    margin-bottom: 20px;
 }
 .etudiant span{
     color: #023b49;
@@ -63,7 +108,16 @@ body{
 }
 .formulaire .etudiant{
     width: 400px;
-    padding-top: 100px;
+    padding-top: 60px;
+}
+.formulaire #afficher{
+   display: none;
+}
+.formulaire .etudiant .alerte{
+   background: #1f9701;
+   color: #fff;
+   padding: 2px 0px;
+   margin-bottom: 30px;
 }
 .formulaire .form{
     border: 2px solid #337180;
